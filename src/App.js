@@ -19,7 +19,6 @@ export default function App() {
 
   const makeItGreen = (event, index) => {
     setOrderedGreen((prev) => {
-      console.log("previous ordered G. inside make it green", prev);
       const isThereAlready = prev.find(
         (elem) => elem === event.target.id || event.target.id === "4"
       );
@@ -52,7 +51,7 @@ export default function App() {
         setStartEmptying(false);
       }
     };
-    console.log("ordered green length", orderedGreen.length);
+
     orderedGreen.length === 8 && setStartEmptying(true);
 
     if (startEmptying) {
