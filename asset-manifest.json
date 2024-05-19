@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/grid-lights/static/css/main.6e833798.css",
+    "main.css": "/grid-lights/static/css/main.fcac5678.css",
     "main.js": "/grid-lights/static/js/main.5168bd86.js",
     "static/js/453.2f3a8654.chunk.js": "/grid-lights/static/js/453.2f3a8654.chunk.js",
     "index.html": "/grid-lights/index.html",
-    "main.6e833798.css.map": "/grid-lights/static/css/main.6e833798.css.map",
+    "main.fcac5678.css.map": "/grid-lights/static/css/main.fcac5678.css.map",
     "main.5168bd86.js.map": "/grid-lights/static/js/main.5168bd86.js.map",
     "453.2f3a8654.chunk.js.map": "/grid-lights/static/js/453.2f3a8654.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e833798.css",
+    "static/css/main.fcac5678.css",
     "static/js/main.5168bd86.js"
   ]
 }
