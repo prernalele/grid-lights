@@ -15,8 +15,6 @@ export default function App() {
   // [3,5,7]
   const [greenArray, setGreenArray] = useState(Array(9).fill(false));
   const [orderedGreen, setOrderedGreen] = useState([]);
-
-  //const [orderedGreen, setOrderedGreen] = useState([undefined, undefined, undefined, undefined, '4', undefined, undefined, undefined, undefined])
   const [startEmptying, setStartEmptying] = useState(false);
 
   const makeItGreen = (event, index) => {
@@ -38,24 +36,15 @@ export default function App() {
   };
 
   useEffect(() => {
-    // add a plainWhite class
-    // pop the id
-
     const emptyGreens = () => {
       const numPopped = orderedGreen.pop();
-      console.log("numPopped", numPopped);
-      // setGreenArray((prev) =>  prev.find((value, index) => index === numPopped) = false)
-      console.log("green array", greenArray[numPopped]);
       setGreenArray((prev) => {
-        console.log("value that was found in previous", prev[numPopped]);
-        //prev.splice(prev[numPopped], 1, false);
         if (numPopped !== 4) {
           prev[numPopped] = false;
         }
         if (numPopped === 4) {
           prev[numPopped] = true;
         }
-        console.log("splice ", [...prev]);
         return [...prev];
       });
 
@@ -72,12 +61,6 @@ export default function App() {
       return () => clearInterval(id);
     }
   }, [orderedGreen, startEmptying, greenArray]);
-
-  // useEffect(() => {
-  //   console.log("greenArray", greenArray)
-  //   console.log("orderedGreen", orderedGreen)
-  //   console.log("startEmptying", startEmptying)
-  // }, [greenArray, orderedGreen])
 
   const Cell = ({ index }) => {
     //console.log("orderedGreen", orderedGreen);
@@ -96,8 +79,6 @@ export default function App() {
       </div>
     );
   };
-
-  // (greenArray.filter((elem) => elem === false)).length ===1 && orderedGreen.length-1}
 
   return (
     <div className="container">
