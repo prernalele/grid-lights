@@ -56,7 +56,7 @@ export default function App() {
 
     if (startEmptying) {
       //console.log("inside set Interval if block")
-      const id = setInterval(emptyGreens, 1000);
+      const id = setInterval(emptyGreens, 300);
       return () => clearInterval(id);
     }
   }, [orderedGreen, startEmptying, greenArray]);

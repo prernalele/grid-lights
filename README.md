@@ -1,3 +1,9 @@
+# Description of the game
+User can click on any of the white squares in any order. Soon as the user clicks on the square it turns green. When all squares have turned green, they are again turned white in the reverse order in which they were clicked. 
+
+# Access the game
+Click on the link https://prernalele.github.io/grid-lights/ to access the game
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
